@@ -20,6 +20,14 @@ scan-path=/srv/repositories/
 ```
 
 ---
+You can clone a git project in the `/srv/repositories/`, such as:
+```
+tian@hello-tian:~$ mkdir -p /srv/repositories/
+tian@hello-tian:~$ cd /srv/repositories/
+tian@hello-tian:/srv/repositories/$ git clone --mirror git://busybox.net/busybox.git
+```
+
+---
 The access URL in a web-browser is such as:
 ```
 http://127.0.0.1:12345/git/
@@ -32,5 +40,3 @@ desc=BusyBox: The Swiss Army Knife of Embedded Linux
 clone-url=git://busybox.net/busybox.git
 owner=
 ```
-
----
