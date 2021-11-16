@@ -1,0 +1,22 @@
+# Url which will be used as root for all cgit links
+virtual-root=/git
+
+# Url which specifies the source of an image which will be used as a logo on all cgit pages
+logo=/cgit/cgit.png
+
+# Url which specifies the css document to include in all cgit pages
+css=/cgit/cgit.css
+
+# Other configurations
+branch-sort=age
+case-sensitive-sort=0
+enable-blame=1
+enable-commit-graph=1
+enable-log-filecount=1
+enable-log-linecount=1
+side-by-side-diffs=1
+
+# Repository configuration
+scan-path=/srv/repositories/
+
+# We can add n number of repositories here.
