@@ -1,6 +1,6 @@
 FROM alpine
 VOLUME ["/sys/fs/cgroup"]
-COPY ./etc /etc/
+COPY ["./etc", "/etc"]
 RUN apk add --update openrc cgit git lighttpd \
     && chmod u+x /etc/docker_entrypoint.sh \
     && echo 'include "cgit.conf"' >> /etc/lighttpd/lighttpd.conf
