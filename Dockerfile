@@ -1,4 +1,5 @@
 FROM alpine
+EXPOSE 80
 VOLUME ["/sys/fs/cgroup"]
 COPY ["./etc", "/etc"]
 RUN apk add --update openrc cgit git lighttpd \
